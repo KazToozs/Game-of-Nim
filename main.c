@@ -5,7 +5,7 @@
 ** Login   <toozs-_c@epitech.net>
 ** 
 ** Started on  Tue Feb  3 17:10:01 2015 cristopher toozs-hobson
-** Last update Fri Feb 13 17:53:40 2015 cristopher toozs-hobson
+** Last update Sun Feb 22 20:03:56 2015 cristopher toozs-hobson
 */
 
 #include <ncurses/curses.h>
@@ -99,7 +99,8 @@ int		main()
 
   mode = players();
   start_up(&a);
-  a.map = malloc(sizeof(int) * a.line_nb);
+  if ((a.map = malloc(sizeof(int) * a.line_nb)) == NULL)
+    return (1);
   make_tab(&a);
   my_putstr("\033[H\033[2J");
   legend_display(a.clmn);

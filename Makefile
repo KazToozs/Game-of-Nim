@@ -5,7 +5,7 @@
 ## Login   <toozs-_c@epitech.net>
 ## 
 ## Started on  Tue Feb  3 12:32:39 2015 cristopher toozs-hobson
-## Last update Fri Feb 13 18:06:01 2015 cristopher toozs-hobson
+## Last update Sun Feb 22 20:10:08 2015 cristopher toozs-hobson
 ##
 
 SRC	=	my_putstr.c		\
@@ -24,9 +24,7 @@ SRC	=	my_putstr.c		\
 		my_getnbr_base.c	\
 		my_revstr.c		\
 		convert_base.c		\
-		my_int_to_str.c		\
 		my_realloc.c		\
-		my_intlen.c		\
 		selection.c		\
 		main.c
 
